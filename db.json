@@ -1,0 +1,143 @@
+{
+  "seller": [
+    {
+      "name": "Shalini",
+      "email": "shalini@gmail.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "name": "Shalini Maurya",
+      "password": "987654",
+      "email": "shalu@test.com",
+      "id": 2
+    },
+    {
+      "name": "Priyank",
+      "password": "123456",
+      "email": "priyank@test.com",
+      "id": 3
+    },
+    {
+      "name": "abcd",
+      "password": "1234",
+      "email": "abc@test.com",
+      "id": 4
+    },
+    {
+      "name": "JJJJ",
+      "password": "1234",
+      "email": "jjjj@gmail.com",
+      "id": 5
+    },
+    {
+      "name": "Shal",
+      "password": "1111",
+      "email": "shalu@test.com",
+      "id": 6
+    }
+  ],
+  "products": [
+    {
+      "name": "Apple",
+      "price": "9000",
+      "category": "Mobile",
+      "description": "iphone14",
+      "image": "https://appsaratov.ru/upload/iblock/a64/1wtu57sgrae1oftwuuj0n6ergwn1pvuc.jpg",
+      "id": 1
+    },
+    {
+      "name": "Apple MacBook",
+      "price": "1,30,000",
+      "category": "Laptop",
+      "description": "Apple MacBook Air 2020 (M1, 13.3 Inch, 8GB, 256GB, macOS Big Sur, Silver)",
+      "image": "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1666277779/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/256712_0_y4ghxi.png/mxw_2048,f_auto",
+      "id": 2
+    },
+    {
+      "name": "Samsung Galaxy S10",
+      "price": "31900",
+      "category": "Mobile",
+      "description": "Prism Blue, 8GB RAM, 128GB Storage",
+      "image": "https://m.media-amazon.com/images/I/51JwEg6f4nL._AC_UF894,1000_QL80_.jpg",
+      "id": 3
+    },
+    {
+      "name": "Redmi A1",
+      "price": "5699",
+      "category": "Mobile",
+      "description": "Light Green, 2GB RAM 32GB ROM) | Segment Best AI Dual Cam | 5000mAh Battery | Leather Texture Design | Android 12",
+      "image": "https://img.giznext.com/assets/model/4/201/xiaomi-mobiles-xiaomi-mi-a1-2-1635234167.jpg",
+      "id": 4
+    },
+    {
+      "name": "realme narzo N55 ",
+      "price": "12999",
+      "category": "Mobile",
+      "description": "Prime Blue, 6GB+128GB) 33W Segment Fastest Charging | Super High-res 64MP Primary AI Camera",
+      "image": "https://m.media-amazon.com/images/I/41Iyj5moShL._QL92_SH45_SS200_.jpg",
+      "id": 5
+    },
+    {
+      "name": "OnePlus Nord CE 2 Lite",
+      "price": "18999",
+      "category": "Mobile",
+      "description": "Black Dusk, 6GB RAM, 128GB Storage",
+      "image": "data:image/jpeg;base64,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",
+      "id": 6
+    },
+    {
+      "name": "Lenovo IdeaPad Slim",
+      "price": "50990",
+      "category": "Laptop",
+      "description": "(39.62cm) IPS FHD Laptop (16GB/512GB SSD/Win 11/Office 2021/2 Year Warranty/Alexa Built-in/3 Month Game",
+      "image": "https://m.media-amazon.com/images/I/41NvMZxjbKL.jpg",
+      "id": 7
+    }
+  ],
+  "users": [
+    {
+      "name": "Shalini Maurya",
+      "email": "shalu@test.com",
+      "password": "789654",
+      "id": 1
+    },
+    {
+      "name": "newUser",
+      "email": "user@gmail.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "name": "priyank",
+      "email": "priyank@gmail.com",
+      "password": "456987123",
+      "id": 3
+    },
+    {
+      "name": "Gaurav",
+      "email": "gaurav@gmail.com",
+      "password": "258963",
+      "id": 4
+    }
+  ],
+  "cart": [],
+  "orders": [
+    {
+      "email": "abc@test.com",
+      "address": "lohta",
+      "contact": "7355605740",
+      "totalPrice": 193970,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "email": "shalu@test.com",
+      "address": "Panchsheel Nagar Lohta Varanasi-221107 U.P.",
+      "contact": "07355605740",
+      "totalPrice": 9100,
+      "userId": 1,
+      "id": 2
+    }
+  ]
+}

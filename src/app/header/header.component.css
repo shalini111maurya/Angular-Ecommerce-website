@@ -1,0 +1,82 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 70px;
+    padding: 10px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.nav:hover{background-color: skyblue;
+color: white;}
+img{
+    vertical-align: top !important;
+}
+
+.nav h1{
+    color:#535353;
+    margin: 0%;
+    font-size: 33px;
+}
+.nav ul{
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav ul li{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.nav ul a{
+    text-decoration: none;
+    color:#535353;
+    cursor: pointer;
+}
+.nav ul a:hover{
+    color: lightgreen;
+}
+
+.searchbar{
+    display: flex;
+    margin-left: 2px;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+}
+
+.searchbar input{
+    color:rgb(0, 68, 255);
+    border-radius: 10px 0px 0px 10px;
+    border: none;
+    min-width: 300px;
+    padding-left: 10px;
+   
+}
+.searchbar button{
+    color: rgb(0, 68, 255);
+    height: 40px;
+    border-left: 0px;
+    background-color: white;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+}
+.suggestedResult{
+    position: absolute;
+    display: list-item !important;
+    z-index: 10;
+    background-color: #fff;
+    width: 300px;
+    top: 40px;
+    border: 1px solid #ddd;
+}
+.suggestedResult li{
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+.suggestedResult li a{
+    cursor: pointer;
+    color: blueviolet;
+}

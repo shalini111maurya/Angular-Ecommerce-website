@@ -1,0 +1,13 @@
+<div class=" row serach-item" *ngFor="let item of searchResult">
+    <div class="col-sm-3">
+        <a routerLink="/details/{{item.id}}">
+            <img src="{{item.image}}">
+        </a>
+    </div>
+    <div class="col-sm-8 details">
+        <h6> <a routerLink="/details/{{item.id}}">{{item.name}}</a></h6>
+        <p><b>{{item.price}}</b></p>
+        <p><span>{{item.category}}</span></p>
+        <p> {{item.description}}</p>
+    </div>
+</div>

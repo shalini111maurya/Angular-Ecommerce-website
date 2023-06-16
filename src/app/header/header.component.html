@@ -1,0 +1,52 @@
+<nav class="nav">
+  <h1 style="width: 35px; height: 35px;border-radius: 50%;">
+    <a routerLink="/" style=" text-decoration: none;">
+      <img src="https://c0.wallpaperflare.com/preview/157/733/255/shopping-online-ecommerce-consumer.jpg" width="100%" height="100%" style="border-radius: 50%;">
+    </a>
+  </h1>
+  <div *ngIf="menuType!=='seller'" class="searchbar">
+    <input type="text" #searchInput (keyup)="searchProduct($event)" (blur)="hideSearch()"
+      placeholder="Search Products" />
+    <button (click)="submitSearch(searchInput.value)">
+      <svg width="24" height="24" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_9778_5452)">
+        <path d="M10.974 9.96224H10.4473L10.2606 9.78224C10.914 9.02224 11.3073 8.03557 11.3073 6.96224C11.3073 4.56891 9.36729 2.62891 6.97396 2.62891C4.58063 2.62891 2.64062 4.56891 2.64062 6.96224C2.64062 9.35557 4.58063 11.2956 6.97396 11.2956C8.04729 11.2956 9.03396 10.9022 9.79396 10.2489L9.97396 10.4356V10.9622L13.3073 14.2889L14.3006 13.2956L10.974 9.96224ZM6.97396 9.96224C5.31396 9.96224 3.97396 8.62224 3.97396 6.96224C3.97396 5.30224 5.31396 3.96224 6.97396 3.96224C8.63396 3.96224 9.97396 5.30224 9.97396 6.96224C9.97396 8.62224 8.63396 9.96224 6.97396 9.96224Z" fill="#A0A0A0"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_9778_5452">
+        <rect width="16" height="16" fill="white" transform="translate(0.640625 0.628906)"/>
+        </clipPath>
+        </defs>
+      </svg>        
+    </button>
+    <ul class="suggestedResult" *ngIf="searchResult">
+      <li *ngFor="let item of searchResult">
+        <a (mousedown)="redirecttoDetails(item.id)">{{item.name}}</a>
+      </li>
+    </ul>
+  </div>
+  <div [ngSwitch]="menuType">
+
+    <ul *ngSwitchCase="'default'">
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="seller-auth">Seller</a></li>
+      <li><a routerLink="user-auth">Login/Sign-Up</a></li>
+      <li><a href="#">Cart({{cartItem}})</a></li>
+    </ul>
+
+    <ul *ngSwitchCase="'user'">
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="seller-auth">Seller</a></li>
+      <li><a routerLink="user-auth">{{userName | titlecase}}</a></li>
+      <li><a routerLink="my-orders">My Order</a></li>
+      <li><a (click)="userLogout()">Logout</a></li>
+      <li><a [routerLink]="cartItem>0?'cart-page':null">Cart({{cartItem}})</a></li>
+    </ul>
+    <ul *ngSwitchCase="'seller'">
+      <li><a routerLink="seller-auth">Product List</a></li>
+      <li><a routerLink="seller-add-product">Add Product</a></li>
+      <li><a (click)="logout()">Logout</a></li>
+      <li><a href="#">{{sellerName | titlecase}}</a></li>
+    </ul>
+  </div>
+</nav>
